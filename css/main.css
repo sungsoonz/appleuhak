@@ -52,7 +52,7 @@ ul {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
-    max-width: 110px;
+    max-width: 94px;
 }
 .navbar-default .navbar-toggle:active,
 .navbar-default .navbar-toggle:hover,
@@ -72,15 +72,14 @@ ul {
     font-weight: 600;
     color: #222;
     line-height: 4;
-    padding-left: 52px;
-    padding-right: 52px;
+    padding: 8px 52px;
 }
 #navbar-collapse-2 .nav li:last-child a {
     padding-right: 0;
 }
 #navbar-collapse-2 .submenu {
     position: absolute;
-    top: 105px;
+    top: 91px;
     left: 0;
     right: 0;
     padding: 20px;
@@ -724,6 +723,15 @@ footer ul.contact-info .fa {
         font-size: 14px;
     }
 }
+@media only screen and (min-width:1025px) and (max-width: 1199px) {
+    #navbar-collapse-2 .nav li a {
+        padding: 8px 42px;
+    }
+    .navbar-brand img {
+        max-width: 90px;
+    }
+}
+
 @media only screen and (min-width:768px) and (max-width: 1024px) {
     section#feature .title {
         font-size: 16px;
@@ -750,7 +758,7 @@ footer ul.contact-info .fa {
         font-size: 22px;
     }
     #navbar-collapse-2 .submenu {
-        top: 78px;
+        top: 67px;
     }
     #navbar-collapse-2 .nav li a {
         font-size: 16px;
@@ -759,7 +767,7 @@ footer ul.contact-info .fa {
         line-height: 3;
     }
     .navbar-brand img {
-        max-width: 80px;
+        max-width: 70px;
     }
 }
 @media screen and (max-width: 1024px) {

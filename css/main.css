@@ -15,24 +15,29 @@ a,
 a:hover {
     text-decoration: none;
 }
+a,
+a:hover, 
+a:focus {
+    color: #2e884b;
+}
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.home h3 {
+h3 {
     font-size: 24px;
     color: #444;
     font-weight: 600;
     margin-bottom: 20px;
 }
-.home h4 {
+h4 {
     font-size: 20px;
     color: #444;
     font-weight: 600;
     line-height: 1.4;
 }
-.home h5 {
+h5 {
     font-size: 15px;
     color: #444;
     font-weight: 600;
@@ -52,7 +57,7 @@ ul {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
-    max-width: 94px;
+    max-width: 87px;
 }
 .navbar-default .navbar-toggle:active,
 .navbar-default .navbar-toggle:hover,
@@ -83,8 +88,8 @@ ul {
     left: 0;
     right: 0;
     padding: 20px;
-    background: rgba(248,241,232,0.9);
-    z-index: 1;
+    background: rgba(248,241,232,0.94);
+    z-index: 9999;
 }
 #navbar-collapse-2 .submenu .container > ul {
     display: table;
@@ -363,6 +368,9 @@ header .text-carousel .desc .visible {
 }
 #ribbonNav .navbar-nav > li > a {
     font-size: 13px;
+}
+#ribbonNav .navbar-brand {
+    padding: 5px;
 }
 #ribbonNav.affix {
     background: rgba(255,255,255,1);
@@ -776,9 +784,9 @@ footer ul.contact-info .fa {
     }
 }
 @media screen and (min-width: 769px) {
-    .navbar-custom .navbar-brand {
+    #mainNzv .navbar-brand {
         font-size: 2em;
-        padding: 5px;
+        padding: 15px 20px;
     }
     #ribbonNav .navbar-nav {
         float: right;
@@ -936,4 +944,221 @@ footer ul.contact-info .fa {
         width: 120px;
     }
 
+}
+
+/*
+    서브 페이지 스타일
+*/
+
+.page {
+    background: #fff;
+}
+.page .breadcrumb {
+    margin-bottom: 0px;
+    background: none;
+}
+.page h3.panel-title {
+    font-size: 24px;
+}
+.page h2.pill {
+    display: inline-block;
+    background: #ff4f4f;
+    color: #fff;
+    border-radius: 35px;
+    padding: 10px 35px;
+    font-size: 20px;
+}
+.page label.bullet {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 24px;
+    color: #ff4f4f;
+    display: block;
+}
+.page label.bullet:before {
+    content:"• ";
+    
+}
+.page label.bullet-sub {
+    margin-left: 24px;
+    margin-bottom: 24px;
+    color: #999;
+    font-weight: 400;
+}
+.page label.bullet-sub .fa {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #42ca78;
+}
+.page label.bullet-sub span {
+    color: #555;
+}
+.page blockquote {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 22px;
+    font-weight: 400;
+    color: #999;
+}
+.page .panel-default {
+    border: none;
+    box-shadow: none;
+}
+.page .panel-default>.panel-heading {
+    background: none;
+    border-bottom: 1px dashed #ccc;
+}
+.page .nav-tabs>li>a {
+    background: #ece4ba;
+    margin-right: 8px;
+    color: #555;
+}
+.page .nav-tabs>li.active>a, 
+.page .nav-tabs>li.active>a:hover, 
+.page .nav-tabs>li.active>a:focus {
+    background: none;
+}
+
+.page .list-group-item.active, 
+.page .list-group-item.active:hover, 
+.page .list-group-item.active:focus {
+    background: #42ca78;
+    border-color: #42ca78;
+}
+.page .badge {
+    background: #42ca78;
+}
+.page a.list-group-item.active>.badge, 
+.page .nav-pills>.active>a>.badge {
+    color: #42ca78;
+}
+
+.page .tab-pane p {
+    font-size: 13px;
+    line-height: 2;
+}
+.page .tab-pane p span {
+    color: #12a5af;
+}
+.page .table ul {
+    list-style: initial;
+    padding: 10px 20px;
+}
+.page .table ul li {
+    margin: 6px auto;
+}
+.page .table thead {
+    background: #f9f2e9;
+    text-align: center;
+}
+.page .table tbody .body-head {
+    background: #fdfdfd;
+}
+.page .table tbody td:first-child {
+    font-weight: 600;
+    text-align: center;
+}
+.page .table tbody td {
+    vertical-align: middle;
+    font-size: 13px;
+}
+.page ul.diagram li {
+    background: #FFE0C0;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px 30px;
+}
+.page ul.diagram label {
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px auto;
+    color: #866708;
+}
+.page ul.diagram.vertical li {
+    margin: 15px auto;
+    width: 30%;
+    display: block;
+}
+.page ul.diagram.vertical .fa {
+    display: block;
+    text-align: center;
+}
+.page ul.diagram.horizontal li {
+    display: inline-block;
+    margin: 10px;
+}
+.page ul.stats {
+    margin: 20px 0;
+}
+.page ul.stats label {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+}
+.page ul.stats .fa {
+    display: inline-block;
+    font-size: 180px;
+    vertical-align: top;
+    color: #ffb733;
+    margin-right: 20px;
+}
+.page ul.stats div {
+    display: inline-block;
+}
+.page ul.stats li {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 3px;
+}
+.page ul.stats li span {
+    font-size: 12px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.page ul.grade {
+    margin: 20px 0;
+    text-align: center;
+} 
+.page ul.grade label {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+}
+.page ul.grade li {
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    color: #222;
+}
+.page ul.grade li.good {
+    background: #ffb733; 
+}
+.page ul.grade li.average {
+    background: #e2d88e;
+}
+.page ul.grade li.poor {
+    background: #eaead0;
+}
+.page ul.grade li.active {
+    font-size: 30px;
+    font-weight: 600;
+}
+.page ul.grade li.active .fa {
+    position: absolute;
+    top: 24px;
+    color: #fff;
+    font-size: 20px;
+    animation: move 1s infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes move {
+    0%   {left: 100px; }
+    50%  {left: 110px; }
+    100% {left: 100px; }
 }
